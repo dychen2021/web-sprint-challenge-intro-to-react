@@ -38,35 +38,37 @@ const App = (foo) => {
       });
   }, []);
 
+  const AppStyle = {
+    border: '5px solid #02ffa7',
+    borderRadius: '10%',
+    width: '50%',
+    marginLeft: '25%',
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: 'rgb(255, 255, 255)',
+    opacity: '0.5',
+    marginTop:'1%',
+    marginBottom:'1%'
+  }
 
-  // console.log(dummyData.Arr);
-  <div>
-    <header>
-      <button>Next Character</button>
-      <button>Previous Character</button>
-    </header>
-    <div>
-      <section>
-      {
-        data.map((element) => (
-            <div className="App" key = {`${element.name}-${element.height}-${element.birth_year}`}>
-              <h1 className="Header">Characters</h1>
-              <Character char={element} key={`${element.name}-${element.height}-${element.birth_year}`} />
-            </div>
-          ))
-      }
-      </section>
-    </div>
-  </div>
+  const h1Style = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingTop: '2%',
+    paddingBottom: '2%',
+    fontSize: '4em'
+  }
+
   return (
     <div>
       <header>
-        <h1 className="Header">Characters</h1>
+        <h1 style={h1Style}>Characters</h1>
       </header>
       <div>
         {
           data.map((element) => (
-            <div className="App" key = {`${element.name}-${element.height}-${element.birth_year}`}>
+            <div style={AppStyle} key = {`${element.name}-${element.height}-${element.birth_year}`} >
               <Character char={element} key={`${element.name}-${element.height}-${element.birth_year}`} />
             </div>
         ))
