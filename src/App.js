@@ -4,23 +4,14 @@ import axios from 'axios';
 
 const dummyData = {
   Arr:[{
-    name: "C-3PO", 
-    height: "167", 
-    mass: "75", 
+    name: "Bob", 
+    height: "1", 
+    mass: "1", 
     hair_color: "n/a", 
-    skin_color: "gold", 
-    eye_color: "yellow", 
-    birth_year: "112BBY", 
+    skin_color: "n/a", 
+    eye_color: "n/a", 
+    birth_year: "1BBY", 
     gender: "n/a"
-  }, {
-    name: "Luke Skywalker", 
-    height: "172", 
-    mass: "77", 
-    hair_color: "blond", 
-    skin_color: "fair", 
-    eye_color: "blue", 
-    birth_year: "19BBY", 
-    gender: "male"
   }]
 }
 
